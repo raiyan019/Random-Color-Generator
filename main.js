@@ -14,5 +14,16 @@ document.getElementById("btn").addEventListener(
 )
     
 
+// Function to open the drawer
+function openDrawer() {
+    document.getElementById('drawer').style.left = '0';  // Slide in
+  }
+  
+  // Function to close the drawer
+  function closeDrawer() {
+    document.getElementById('drawer').style.left = '-300px';  // Slide out
+  }
+  
+
 
 getColor();

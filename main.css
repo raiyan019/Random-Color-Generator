@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .body {
     background-color: black;
+    font-family:  Arial, sans-serif;
 }
 
     .main {
@@ -31,4 +32,130 @@
         display: block;
         font-size: 35px;
     }
+      
+      .open-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      
+      .open-btn:hover {
+        background-color: #45a049;
+      }
+      
+      /* Drawer styles */
+      .drawer {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Initially hidden off-screen */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        transition: left 0.3s ease; /* Smooth sliding effect */
+        padding: 20px;
+      }
+      
+      .drawer .close-btn {
+        padding: 10px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      
+      .drawer .close-btn:hover {
+        background-color: #e53935;
+      }
+      
+      /* The drawer container */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #98C5E9;
+    color: #001838;
+    transition: left 0.3s ease;
+    padding: 20px;
+    z-index: 9;
+    overflow-y: auto;
+  }
+  
+  /* Close button inside the drawer */
+  .drawer .close-btn {
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: #001838;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .drawer .close-btn:hover {
+    background-color: #e53935;
+  }
+  
+  /* Styling the navigation menu */
+  .drawer ul {
+    list-style-type: none;
+  }
+  
+  .drawer ul li {
+    padding: 10px 0;
+  }
+  
+  .drawer ul li a {
+    color:#001838;
+    text-decoration: none;
+  }
+  
+  .drawer ul li a:hover {
+    color: #FFFFFF;
+  }
+  
 
+  /* Profile info styling */
+  .profile-info img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+  }
+  
+  /* Form styling */
+  form label {
+    margin-top: 10px;
+    display: block;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #001838;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }

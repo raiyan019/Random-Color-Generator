@@ -18,6 +18,49 @@
                 </button>
         </div>
     </div>
+
+<!-- Button to open the drawer -->
+<button class="open-btn" onclick="openDrawer()">Open Drawer</button>
+
+<!-- The Drawer -->
+<div id="drawer" class="drawer">
+  <button class="close-btn" onclick="closeDrawer()">Close</button>
+  
+
+  <!-- Drawer Content -->
+  <h2>It Is What It Is</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About Me</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <h2>User Profile</h2>
+  <div class="profile-info">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_UViGj-1-v_vI7iNvzItb6JB6Wzb9u8vntw&s" 
+    alt="Profile Picture" width="110">
+    <p><strong>Pep Guardiola </strong></p>
+    <p>Email: pep06@example.com</p>
+    <p>Location: Manchester , UK</p>
+  </div>
+
+  <h2>Contact Me</h2>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
     <script src="js/main.js"></script>
 </body>
 </html>
